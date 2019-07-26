@@ -43,6 +43,7 @@ class LostHatShoppingCartTests(unittest.TestCase):
 
         add_button_element = driver.find_element_by_xpath(add_button_xpath)
         add_button_element.click()
+        time.sleep(2)
         # confirmation_modal_element = WebDriverWait(driver, 10).until(
         #   EC.visibility_of_element_located((By.XPATH, confirmation_modal_title_xpath)),
         #   f"Element for xpath: '{confirmation_modal_title_xpath}' and url: {driver.current_url} not found")
